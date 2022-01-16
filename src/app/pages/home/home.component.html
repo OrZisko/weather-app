@@ -1,7 +1,0 @@
-<section class="app-home">
-    <city-search (onSearchCity)="onSearchCity($event)" [suggestions]=citySuggestions
-        (onChooseCity)="onChooseCity($event)"></city-search>
-    <button (click)="onLikeCity()" class="like-btn" *ngIf="forcasts">
-        <img class="like-img" src="./assets/images/love.png"></button>
-    <forcasts *ngIf="forcasts" [forcasts]=forcasts></forcasts>
-</section>
