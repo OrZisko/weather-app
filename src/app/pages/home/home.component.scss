@@ -1,0 +1,12 @@
+.app-home {
+    display: flex;
+    flex-direction: column;
+    .like-btn  {
+        margin: 10px;
+        background: none;
+        border: none;
+        img {
+            width: 1em;    
+        }
+    }
+}

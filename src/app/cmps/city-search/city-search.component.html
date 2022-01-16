@@ -1,0 +1,12 @@
+<section class="city-search-container">
+    <label for="cityTerm">
+        <input autocomplete="off" [(ngModel)]="cityTerm" (ngModelChange)="onSearchCity.emit(cityTerm)" type="text"
+            name="cityTerm" id="city-input">
+        <img src="./assets/images/search.png" alt="">
+    </label>
+    <ul class="city-suggs-list" *ngIf="cityTerm">
+        <li *ngFor="let city of suggestions" class="city-sugg" (click)="chooseCity(city)">
+            {{city.city}}
+        </li>
+    </ul>
+</section>

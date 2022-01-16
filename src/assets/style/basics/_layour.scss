@@ -1,0 +1,19 @@
+body {
+    height: 100vh;
+}
+
+#app {
+    min-height: 100%;
+    grid-template-columns: 10px minmax(100px, 92%) 10px;
+    display: grid; 
+    grid-template-rows: 100px 1fr;
+    >app-header {
+        grid-column: 1/-1;
+    }
+    >main {
+        grid-column: 2;
+    }
+    @media only screen and (min-width: 940px) {
+        grid-template-columns: minmax(20px, 1fr) minmax(auto, 940px) minmax(20px, 1fr);
+    }
+}

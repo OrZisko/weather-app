@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    @media screen and (max-width: 600px) {
+        font-size: 14px;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,p {
+    margin: 0;
+}
+
+input {
+    background: none;
+    height: 2em;
+    padding: 5px 2px;
+    border: none;
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+button {
+    background-color: white;
+    border-radius: 15px;
+    margin: 2px 5px;
+    font: inherit;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#app {
+    background-image: linear-gradient(rgb(94, 117, 182), rgb(167, 119, 64));
+}

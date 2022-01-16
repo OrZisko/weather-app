@@ -1,0 +1,16 @@
+.app-header {
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 600px) {
+        h1 {
+            font-size: 25px;
+        }
+    }
+    .header-nav {
+        display: flex;
+        gap: 20px;
+    }
+}
